@@ -13,4 +13,4 @@ end
 
 recipe 'centos-gnome-tigervnc::default', 'Yum installs the GNOME Desktop and TigerVNC'
 
-depends 'yumgroup'
+# depends 'yumgroup'
