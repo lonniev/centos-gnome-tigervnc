@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe "yumgroup"
+include_recipe 'yumgroup'
 
 # GNOME Desktop packages
 yumgroup "GNOME Desktop"
