@@ -18,10 +18,14 @@
 # limitations under the License.
 #
 
-include_recipe 'yumgroup'
+# yumgroup is broken
+# include_recipe 'yumgroup'
 
 # GNOME Desktop packages
-yumgroup "GNOME Desktop"
+# yumgroup "GNOME Desktop"
+execute "yum install 'GNOME Desktop'" do
+  command 'yum groupinstall -y "GNOME Desktop" && yum clean all'
+end
 
 # the VNC package(s)
 %w(
